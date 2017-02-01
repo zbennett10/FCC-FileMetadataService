@@ -7,6 +7,8 @@ var app = express();
 app.set('view engine', 'pug');
 
 //middleware
+//set static file directory
+app.use('/assets', express.static('public'));
 app.use('/', apiRoute);
 
 //start server
