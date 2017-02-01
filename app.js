@@ -10,6 +10,7 @@ app.set('view engine', 'pug');
 //set static file directory
 app.use('/assets', express.static('public'));
 app.use('/', apiRoute);
+//app.use('/upload', apiRoute);
 
 //start server
 var port = process.env.PORT || 3000;

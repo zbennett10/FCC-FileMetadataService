@@ -22,10 +22,11 @@ form.onsubmit = function(e) {
         success: function(result) {
             console.log(result);
             formData.delete('userUpload');
+            location.reload();
         }
     });
 
-    e.preventDefault();
-    return false;
+     e.preventDefault();
+     return false;
 }
 
