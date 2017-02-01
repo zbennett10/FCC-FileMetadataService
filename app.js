@@ -6,11 +6,14 @@ var app = express();
 //set view engine
 app.set('view engine', 'pug');
 
-//middleware
+////////////////
+///middleware///
+////////////////
+
 //set static file directory
 app.use('/assets', express.static('public'));
+
 app.use('/', apiRoute);
-//app.use('/upload', apiRoute);
 
 //start server
 var port = process.env.PORT || 3000;
